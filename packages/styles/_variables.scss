@@ -1,0 +1,24 @@
+/* Colors
+========================================================================== */
+$color-primary: #fff;
+
+
+/* Directories
+========================================================================== */
+$dir-img: "/images" !default;
+$dir-fonts: "/fonts" !default;
+
+
+/* Responsive breakpoints
+========================================================================== */
+$breakpoints: (
+    mob: 450px,
+    mob-lg: 550px,
+    xs: 767px,
+    sm: 768px,
+    sm-md: 900px,
+    md: 992px,
+    sd: 1200px,
+    lg: 1440px,
+    xl: 1600px,
+) !default;

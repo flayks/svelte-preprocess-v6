@@ -1,0 +1,55 @@
+---
+import Test from '../components/Test/Test.svelte'
+import PortableText from 'components/atoms/PortableText/PortableText.svelte'
+
+const text = [{
+	'_type': 'block',
+	'_key': 'da5f884c9804',
+	'style': 'normal',
+	'children': [
+		{
+			'_type': 'span',
+			'_key': 'da5f884c98040',
+			'text': 'Say hi to ',
+			'marks': []
+		},
+		{
+			'_type': 'span',
+			'_key': 'da5f884c98041',
+			'text': 'Portable Text',
+			'marks': [
+				'strong',
+				'<markDefId>'
+			]
+		},
+		{
+			'_type': 'span',
+			'_key': 'da5f884c98042',
+			'text': '.',
+			'marks': []
+		}
+	],
+	'markDefs': [{
+		'_type': 'link',
+		'_key': '<markDefId>',
+		'href': 'https://www.portabletext.org'
+	}]
+}]
+---
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Astro</title>
+</head>
+<body>
+	<h1>Astro using PortableText with svelte-preprocess</h1>
+
+	<Test />
+
+	<PortableText content={text} />
+</body>
+</html>
