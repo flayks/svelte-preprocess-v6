@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { sveltePreprocess } from 'svelte-preprocess'
+import preprocess from 'svelte-preprocess'
 
 const globalStylesPath = `${resolve(fileURLToPath(import.meta.url), '../../../packages/styles')}`
 
@@ -17,7 +17,7 @@ export const globalSCSSImports = (projectVariables) => {
 export const createSvelteConfig = ({ scssImports, ...settings }) => {
     return {
         // Preprocessors docs: https://github.com/sveltejs/svelte-preprocess
-        preprocess: sveltePreprocess({
+        preprocess: preprocess({
             scss: {
                 prependData: scssImports,
             }
