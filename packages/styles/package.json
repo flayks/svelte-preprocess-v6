@@ -1,7 +1,0 @@
-{
-    "name": "styles",
-    "version": "0.0.0",
-    "dependencies": {
-        "sanitize.css": "^13.0.0"
-    }
-}

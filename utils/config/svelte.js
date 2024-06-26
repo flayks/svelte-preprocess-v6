@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { sveltePreprocess } from 'svelte-preprocess'
 
-const globalStylesPath = `${resolve(fileURLToPath(import.meta.url), '../../../packages/styles')}`
+const globalStylesPath = `${resolve(fileURLToPath(import.meta.url), '../../../utils/styles')}`
 
 export const globalSCSSImports = (projectVariables) => {
     const files = [

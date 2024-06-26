@@ -1,18 +1,24 @@
 {
-  "name": "svelte-preprocess-astro",
+  "name": "nebulous-neutron",
+  "type": "module",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@portabletext/svelte": "^2.1.11",
+    "astro": "4.11.1",
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
-    "turbo": "^2.0.4"
-  },
-  "type": "module",
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "packageManager": "pnpm@9.4.0"
+    "@astrojs/svelte": "^5.6.0",
+    "sass": "^1.77.6",
+    "svelte": "^4.2.18",
+    "svelte-preprocess": "^6.0.1"
+  }
 }
